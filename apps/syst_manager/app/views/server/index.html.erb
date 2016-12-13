@@ -1,0 +1,24 @@
+<!-- Header -->
+  <div class="intro-header">
+    <div class="container">
+      <div class="row" style="padding-top: 5%; overflow: scroll;">
+        <% @servers.each do |server| %>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Server <%= server[:name] %></h3>
+              </div>
+              <div class="panel-body">
+                <p><span class="glyphicon glyphicon-scale"></span> CPU: <%= server[:uw_cpuused] %></p>
+                <p><span class="glyphicon glyphicon-hdd"></span> Disk : <%= server[:uw_diskused_perc] %></p>
+                <a><span class="glyphicon glyphicon-equalizer"></span> Details... </a>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.intro-header -->
