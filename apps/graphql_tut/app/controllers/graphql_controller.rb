@@ -1,5 +1,6 @@
 class GraphqlController < ApplicationController
   def execute
+    puts "GraphqlController::execute !"
     variables = ensure_hash(params[:variables])
     query = params[:query]
     operation_name = params[:operationName]
@@ -8,7 +9,9 @@ class GraphqlController < ApplicationController
       session: session,
       current_user: current_user
     }
+    puts "GraphqlController::execute >> variables: #{variables}"
     result = GraphqlTutSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
+    puts "GraphqlController::execute >> result: #{result}"
     render json: result
   end
 

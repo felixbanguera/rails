@@ -11,6 +11,7 @@ class Resolvers::CreateUser < GraphQL::Function
   type Types::UserType
 
   def call(_obj, args, _ctx)
+    puts "Resolvers::CreateUser::call >> #{args}"
     User.create!(
       name: args[:name],
       email: args[:authProvider][:email][:email],
