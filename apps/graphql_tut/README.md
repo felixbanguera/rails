@@ -20,3 +20,9 @@ At this moment the requests available are:
 - createUser
 - deleteUser
 - allUsers
+
+
+# How to run:
+
+- run `bundle install`
+- run `rails server`
