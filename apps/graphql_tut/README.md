@@ -6,17 +6,17 @@ In this oportuity I will be building a Graphql Rails server able to respond to s
 
 At this moment the requests available are:
 
-  createLink
-  createUser
-  signinUser
-  createVote
-  deleteUser
-  allLinks
-  allUsers
-  link
+-  createLink
+-  createUser
+-  signinUser
+-  createVote
+-  deleteUser
+-  allLinks
+-  allUsers
+-  link
   
   BUt the request to be used by the IONIC client API found at this [repo](https://github.com/felixbanguera/ionic/tree/master/ionic2-graphql-apollo-client-master) are:
   
-createUser
-deleteUser
-allUsers
+- createUser
+- deleteUser
+- allUsers
