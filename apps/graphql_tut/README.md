@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby On Rails is the most popular library for building applications in Ruby.
 
-Things you may want to cover:
+In this oportuity I will be building a Graphql Rails server able to respond to single GraphQl like requests.
 
-* Ruby version
+At this moment the requests available are:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  createLink
+  createUser
+  signinUser
+  createVote
+  deleteUser
+  allLinks
+  allUsers
+  link
+  
+  BUt the request to be used by the IONIC client API found at this [repo](https://github.com/felixbanguera/ionic/tree/master/ionic2-graphql-apollo-client-master) are:
+  
+createUser
+deleteUser
+allUsers
