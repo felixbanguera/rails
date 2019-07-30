@@ -18,6 +18,6 @@ class SessionsController < ApplicationController
 
   	def destroy
   		session.delete(:user_id)
-  		redirect_to new_user_path, notice: "Session closed !"
+  		redirect_to root_path, notice: "Session closed !"
   	end
 end

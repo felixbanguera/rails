@@ -1,5 +1,5 @@
-<ul>
-	<% @profiles.each do |profile| %>
-		<li><%= link_to profile.alias.capitalize, profile %></li>
-	<% end -%>
-</ul>
+<%= link_to "Remotes", profiles_path(is_remote: true), class: "tag" %>
+<%= link_to "In site", profiles_path(is_remote: false), class: "tag" %>
+<%= link_to "Clear filter", profiles_path, class: "tag" %>
+<hr/>
+<%= render 'profiles/profiles' %>

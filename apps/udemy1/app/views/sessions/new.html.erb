@@ -1,14 +1,19 @@
-<h2>Log in</h2>
-<%= form_with url: sessions_path do |f| %>
-	<div>
-		<%= f.label :email %>
-		<%= f.email_field :email %>
-	</div>
-	<div>
-		<%= f.label :password %>
-		<%= f.password_field :password %>
-	</div>
-	<div>
-		<%= f.submit "Log in" %>
-	</div>
-<% end -%>
+
+<div class="columns">
+<div class="is-three-fifths">
+	<h2 class="text-center">Log in</h2>
+	<%= form_with url: sessions_path do |f| %>
+		<div class="field">
+			<%= f.label :email %>
+			<%= f.email_field :email, autofocus: true, class: "input" %>
+		</div>
+		<div class="field">
+			<%= f.label :password %>
+			<%= f.password_field :password, autofocus: true, class: "input" %>
+		</div>
+		<div class="field">
+			<%= f.submit "Log in", class: "button is-primary is-fullwidth" %>
+		</div>
+	<% end -%>
+</div>
+</div>

@@ -1,7 +1,13 @@
 class ProfilesController < ApplicationController
 	before_action :set_profile, only: [:show, :edit, :update, :destroy]
 	def index
-		@profiles = Profile.all
+		is_remote = params[:is_remote]
+
+		if is_remote
+			@profiles = Profile.last_published.where({is_remote: is_remote})
+		else
+			@profiles = Profile.last_published
+		end
 	end
 	def show
 		@profile = Profile.find(params[:id])

@@ -1,25 +1,25 @@
 <%= form_with(model: @profile) do |f| %>
-	<div>
+	<div class="field">
 		<%= f.label :alias %>
-		<%= f.text_field :alias %>
+		<%= f.text_field :alias, class: "input" %>
 	</div>
-	<div>
+	<div class="field">
 		<%= f.label :description %>
-		<%= f.text_area :description %>
+		<%= f.text_area :description, class: "textarea" %>
 	</div>
-	<div>
+	<div class="field">
 		<%= f.label :price %>
-		<%= f.number_field :price %>
+		<%= f.number_field :price, class: "input" %>
 	</div>
-	<div>
+	<div class="field">
 		<%= f.label :is_remote %>
-		<%= f.check_box :is_remote %>
+		<%= f.check_box :is_remote, class: "checkbox" %>
 	</div>
-	<div>
+	<div class="field">
 		<%= f.label :user_id %>
-		<%= f.text_field :user_id %>
+		<%= f.text_field :user_id, class: "input" %>
 	</div>
-	<div>
-		<%= f.submit 'Save Profile' %>
+	<div class="field">
+		<%= f.submit nil, class: "button is-primary is-fullwidth" %>
 	</div>
 <% end -%>
