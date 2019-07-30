@@ -1,0 +1,25 @@
+<%= form_with(model: @profile) do |f| %>
+	<div>
+		<%= f.label :alias %>
+		<%= f.text_field :alias %>
+	</div>
+	<div>
+		<%= f.label :description %>
+		<%= f.text_area :description %>
+	</div>
+	<div>
+		<%= f.label :price %>
+		<%= f.number_field :price %>
+	</div>
+	<div>
+		<%= f.label :is_remote %>
+		<%= f.check_box :is_remote %>
+	</div>
+	<div>
+		<%= f.label :user_id %>
+		<%= f.text_field :user_id %>
+	</div>
+	<div>
+		<%= f.submit 'Save Profile' %>
+	</div>
+<% end -%>

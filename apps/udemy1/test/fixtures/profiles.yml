@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alias: MyString
+  description: MyString
+  is_remote: false
+  price: 1
+  address: MyString
+  user: one
+
+two:
+  alias: MyString
+  description: MyString
+  is_remote: false
+  price: 1
+  address: MyString
+  user: two

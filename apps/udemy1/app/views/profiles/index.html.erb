@@ -1,0 +1,5 @@
+<ul>
+	<% @profiles.each do |profile| %>
+		<li><%= link_to profile.alias.capitalize, profile %></li>
+	<% end -%>
+</ul>
